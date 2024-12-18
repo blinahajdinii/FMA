@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="action_page.php" method="dialog">
+        <!-- get- i shfaq ne URL, nuk perdoret
+         post-secure se nuk i shfaq tdhenat nURL -->
+        <label for="emri">Emri:</label>
+        <input type="text" name="emri" id="emri" placeholder="Name" required>
+        <!-- required- nuk e len me bo submit pa i plotsu -->
+        <br>
+        <hr>
+        <label for="Mbiemri">Mbiemri:</label>
+        <input type="text" name="Mbiemri" id="Mbiemri" placeholder="Surname"> <br>
+        <hr>
+        <!-- placeholder- per me shkru ni tekst mrena katrorit qe kur tja nismi me shkru heket -->
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Shkruaj Passwordin" maxlength="12"> <br>
+        <hr>
+        <!-- maxlength- sa shkronja munesh mi shkru mas shumti -->
+        <label for="date"></label>
+        <input type="date" name="date" id="date"> <br>
+        <hr>
+        <label for="select"></label>
+        <select name="" id="">
+            <option value="" disabled selected> </option>
+            <option value="">Pica</option>
+            <option value="">Shkurta</option>
+        </select> <br>
+        <label for="radio">Mr</label>
+        <input type="radio" name="radio" id="radio" value="Mr.">
+       <br>
+        <label for="radio">Mrs</label>
+        <input type="radio" name="radio" id="radio" value="Mrs.">
+        <label for="reset"></label> <br>
+        <input type="reset" name="reset" id="reset"> <br> <br>
+        <!-- reset- per me kthy form ne formen e meparshme -->
+        <label for="submit"></label>
+        <input type="submit" value="submit" name="" id="">
+    </form>
+</body>
+
+</html>
