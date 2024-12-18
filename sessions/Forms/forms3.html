@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="action_page.php" method="get"></form>
+    <label for="checkbox">Muzike rock</label>
+    <input type="checkbox" name="muzika" id="checkbox" value="Muzike rock"> <br>
+    <label for="checkbox">Muzike popullore</label>
+    <input type="checkbox" name="muzika" id="checkbox" value="Muzike popullore"> <br><br>
+    <label for="file">Zgjidhe file</label>
+    <input type="file" name="file" id=""> <br> <br>
+    <!-- me zgedh ni file  -->
+    <label for="quantity">Sasia</label>
+    <input type="number" name="sasia" id="quantity"> <br> <br>
+    <!-- per me zgedh ni sasi ose per numra -->
+    <label for="comment">Koment</label>
+    <textarea name="" id="comment" cols="25" rows="10"></textarea> <br><br>
+
+    <!-- per me lon ni koment, cols-sa kolona po don mja lon, rows-ra rreshta-->
+    <label for="group">grupe formash</label>
+    <fieldset>
+        <legend>Kontaktet</legend>
+        <label for="email">Email</label>
+        <input type="email" name="" id="email" placeholder="example@domain.com"> <br>
+        <label for="number">Number</label>
+        <input type="num" name="" id="number" placeholder="+383-44-000-000">
+    </fieldset>
+    <!-- per me bo ni grup tformave 
+      legend-mja lon ni emer-->
+    <input type="reset" name="" id="">
+    <input type="submit" value="submit" name="" id="">
+</body>
+
+</html>
