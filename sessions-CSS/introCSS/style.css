@@ -1,0 +1,14 @@
+*{
+    background-color: rgb(68, 4, 4);
+
+}
+p{
+    font-size: 60px;
+    /* madhsia e tekstit */
+    font-style: italic;
+    /* me bo tekstin italic */
+    font-weight:lighter;
+    /* me bo tekstin bold */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    /* me ndrru fontin e shkronjave */
+}
