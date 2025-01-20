@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:nth-child(3) ,li:nth-child(7){
+            font-weight: bold;
+        }
+        /* me zgedh cilin child tdush*/
+        li:nth-child(2n+1){
+            color: darkred;
+        }
+        /* n gjith ja nis prej numrit 0 mu numru edhe vazhdon si varg */
+        li:nth-child(even){
+            background-color: violet;
+        }
+        li:nth-child(odd){
+            background-color: yellow;
+            
+        }
+        /* even edhe odd jon per numra qift edhe tek */
+        h1{
+            text-align:center;
+        }
+        body{
+            background-image: url(https://assets3.thrillist.com/v1/image/2531557/1200x630/flatten;crop_down;webp=auto;jpeg_quality=70);  
+        }
+        p{
+            text-transform:capitalize;
+            text-decoration:underline;
+            text-decoration-style:double;
+            letter-spacing: 10px;
+            word-spacing: 20px;
+        }
+        /* uppercase- mi bo tmadhja, lowercase-tvogla, capitalize-shkronajt e para tmdhaja */
+        /* me text decoration naj vi nmes ose posht, me style me ndreq qat vijen qysh tdojm */
+        /* letter-spacing per me lon hapsir mes shkronjave */
+        /* word-spacing mes fjalve */
+        p::first-letter{
+            font-size: 60px;
+            
+        }
+        /* me bo veq per shkronjen e par  */
+    </style>
+</head>
+<body>
+    <ul>
+        <li>elementi1</li>
+        <li>elementi2</li>
+        <li>elementi3</li>
+        <li>elementi4</li>
+        <li>elementi5</li>
+        <li>elementi6</li>
+        <li>elementi7</li>
+        <li>elementi8</li>
+    </ul>
+    <h1>Titulli i pare</h1>
+    <p>Paragrafi i pare ne kete file </p>
+</body>
+</html>
