@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article>p{
+            background-color: red;
+        }
+        /* ose article p{} */
+        /* paragrafat ne article */
+        article,p{
+            background-color: brown;
+        }
+        /* qka tken article edhe p mrena file ti bon me background-color */
+        article+p{
+            background-color: aquamarine;
+        }
+        /* meniher mas article, elementi i pare qe osht paragraf me bo me background-color */
+        article~p{
+            background-color: blue;
+        }
+        /* komplet elementet qe jon jasht article qe jon paragrafa mi bo me background-color */
+        
+    </style>
+</head>
+
+<body>
+    <article>
+        <p>Paragrafi i pare</p>
+        <p>Paragrafi i dyte</p>
+    </article>
+    <p>Paragrafi i trete</p>
+    <p>Paragrafi i katert</p>
+</body>
+
+</html>
