@@ -1,0 +1,33 @@
+*{
+margin: 0;
+/* hapsira qe e zen prej kufinit jasht */
+padding: 0;
+/* hapsira qe e zen mes shkronjes deri nborder*/
+}
+
+h1{
+margin: 20px;
+}
+/* selektori element */
+
+.h1{
+margin: 0;
+}
+/* selektori klase */
+
+#h1{
+margin: 30px;
+background-color: blanchedalmond !important;
+/* per me mujt secilin selektor !important. Nuk o metod e mir */
+}
+/* selektori id */
+.bttn{
+    background-color: blue;
+    margin: 5px;
+    padding: 5px;
+    font-style:italic;
+}
+
+.bttn1{
+    padding: 15px;
+}
