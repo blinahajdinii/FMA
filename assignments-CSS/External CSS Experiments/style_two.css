@@ -1,0 +1,16 @@
+h1{
+    background-color: purple;
+    color: plum;
+    margin: 20px;
+
+}
+h2{
+    font-size: small;
+    background-color:brown;
+    margin: 30px;
+}
+p{
+    background-color: black;
+    font-style: italic;
+    color: rgb(177, 165, 165);
+}
