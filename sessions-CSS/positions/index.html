@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a {
+            display: inline;
+            /* nuk mundes mja ndrru width ose hwight
+            inline perdoret veq per ni pjes telementit pershembull kur perdormi
+            span, a, b, i, etj */
+            border: 3px solid red;
+            background-color: blue;
+            color: orangered;
+            width: 500px;
+            height: 200px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        h1 {
+            display: block;
+            /* e zen komplet rreshtin elementi */
+            border: 2px solid red;
+            width: 150px;
+            height: 100px;
+        }
+
+        .b {
+            display: inline-block;
+            /* osht inline e perzime me block, mun me ndrru height width */
+            border: 3px solid red;
+            background-color: blue;
+            color: orangered;
+            width: 500px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <p>Paragrafi i pare i cili
+            na mundeson qe permes tij
+            te kuptojme pjeset e tagut display ne
+            CSS sic jane <span class="a">inline</span> , <span class="a">inline-block</span> dhe
+            block</p>
+        <h1>Titulli i pare</h1>
+        <h2>Titulli i dyte <span class="b">123</span></h2>
+    </div>
+
+</body>
+
+</html>
