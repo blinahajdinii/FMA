@@ -1,0 +1,29 @@
+body{
+margin: 0;
+padding: 0;
+}
+.container:nth-child(odd){
+    background-color: antiquewhite;
+    
+}
+.container:nth-child(even){
+    background-color: rgb(172, 170, 170);
+}
+.container{
+    height: 25vh;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+hr{
+    border-color: red;
+    width: 33%;
+}
+.h{
+    font-size: 0.95em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+}
+.p{
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
