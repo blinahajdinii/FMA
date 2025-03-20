@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #ccc;
+        }
+
+        .form {
+            background-color: #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+
+        .text {
+            font-size: 14px;
+            color: gray;
+            margin: 5px 0 0;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+
+        .email-container input:focus+.text {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .name-container input:focus+.text {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .surname-container input:focus+.text {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .circle {
+            animation-name: circle;
+
+            .rotating-circle {
+                animation-name: rotate;
+                animation-duration: 1s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+
+            }
+
+        }
+
+        @keyframes circle {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form class="form">
+        <div class="name-container">
+            <input type="text" placeholder="First Name" name="" id="">
+            <p class="text">*Enter a valid first name</p>
+        </div>
+        <div class="surname-container">
+            <input type="text" placeholder="Last Name" name="" id="">
+            <p class="text">*Enter a valid last name</p>
+        </div>
+
+        <div class="email-container">
+            <input type="email" placeholder="Email Address" />
+            <p class="text">* Your email should be a Gmail domain</p>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <div>
+        <svg class="circle" width="50" height="50">
+            <circle cx="50" cy="50" r="45" stroke="#007bff" stroke-width="10" fill="none" />
+        </svg>
+    </div>
+</body>
+
+</html>
