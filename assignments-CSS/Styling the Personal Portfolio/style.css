@@ -1,0 +1,171 @@
+body {
+    cursor:url(pointer.png), auto;
+    height: 100vh; 
+    background: linear-gradient(to bottom, rgba(148, 231, 236, 0.5), rgba(148, 231, 236,  0.5)), 
+                url(https://plus.unsplash.com/premium_photo-1671229652411-4468b946b787?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFpbiUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D) no-repeat center center;
+    background-size: cover; 
+}
+
+hr {
+    width: 1200px;
+    border-color: black;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    text-align: center;
+}
+
+header>nav>ul>li {
+
+    width: 80px;
+    height: 20px;
+    padding: 10px;
+    list-style-type: none;
+    display: inline;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.a {
+    border-color: rgb(64, 64, 230);
+    background-color: rgb(64, 64, 230);
+    color: white;
+    border-radius: 10px;
+    border-style: solid;
+    height: 20px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.a:hover {
+    background-color: blue;
+    border-color: blue;
+
+}
+
+#whoami {
+    background-color: rgb(219, 219, 124);
+    border-radius: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#whoami>section>h2 {
+    text-align: center;
+}
+
+.img {
+    position: relative;
+    left: 440px;
+}
+
+#whoami:hover {
+    background-color: rgb(233, 233, 18);
+    border-style: solid;
+    border-width: 2px;
+}
+
+#education {
+    background-color: rgb(240, 103, 126);
+    border-radius: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+
+}
+
+.primary {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.highschool {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#education:hover {
+    background-color: rgb(241, 58, 58);
+    border-style: solid;
+}
+
+#myskills {
+    background-color: rgb(126, 240, 103);
+    border-radius: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#myskills>section>table {
+    border-collapse: collapse;
+}
+
+th {
+    background-color: rgb(59, 219, 59);
+}
+
+#myskills:hover {
+    background-color: rgb(53, 206, 53);
+    border-style: solid;
+}
+
+#myprojects {
+    background-color: rgb(238, 117, 168);
+    border-radius: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    line-height: 30px;
+}
+
+.shigjeta {
+    background-color: orangered;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+    bottom: 6px;
+
+}
+
+.shigjeta:hover {
+    background-color: rgb(228, 113, 5);
+}
+
+#myprojects:hover {
+    background-color: rgb(211, 59, 148);
+    border-style: solid;
+}
+
+footer {
+    background-color: rgb(31, 26, 28);
+
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
