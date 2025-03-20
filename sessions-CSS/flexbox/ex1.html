@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            background-color: blue;
+            display: flex;
+            
+            flex-direction: row;
+            /* row- nrreshta
+             column-nkolona
+             row-reverse- ja nis prej fundit te e para 
+             column-reverse- ja nis prej fundit te e para*/
+            flex-wrap: wrap;
+            /* nowrap-del jasht korrnizes
+            wrap-del nrresht tjeter */
+            justify-content:space-evenly ;
+            /* i shfrytzon hapsirat sa ma mir tosht e mundshme */
+            /* center-e qon contentin nmes
+            flex-start - ja nis prej fillimit
+            flex-end - ja nis prej fundit amo me numrin normal
+            space-around - e krijon hapsiren mes elementeve kejt barabart
+            space-between -  elementi i par edhe i fundit rrin nqosh edhe tani krijohet hapsira mes 
+            elementeve tjera
+            space-evenly - kejtav i jep space tbarabart*/
+        }
+        .flex-container>div{
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
