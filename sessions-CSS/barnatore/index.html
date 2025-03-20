@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "aside main"
+                "footer footer";
+                margin: 0;
+        }
+        header{
+            grid-area: header;
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(29, 197, 29);
+        }
+        header>section>img{
+            border-radius: 50%;
+            margin: 10px;
+        }
+        header>section>ul>li>a{
+            text-decoration: none;
+            font-size: 20px;
+            padding-left: 20px;
+            color: white;
+        }
+        header>section>ul>li>a:hover{
+
+        }
+        header>section>ul>li{
+            list-style-type: none;
+
+        }
+        aside{
+            grid-area: aside;
+            grid:1 1 80px;
+            background-color: rgb(221, 206, 206);
+            width: 10%;
+            transition-duration: 3s;
+            transition-timing-function: ease;
+        }
+        aside:hover{
+            width: 60%;
+        }
+        main{
+            grid-area: main;
+            grid: 1 1 200px;
+        }
+        main>#kreu>section>h1{
+            font-size: 30px;
+        }
+        footer{
+            grid-area: footer;
+            background-color: rgb(29, 197, 29) ;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section>
+            <img width="10%" "
+                src="https://thumbs.dreamstime.com/b/pharmacy-vector-symbol-hands-pharmacist-pharma-store-doctor-medicine-modern-design-vector-logo-white-pharmacy-187005749.jpg"
+                alt="">
+        </section>
+        <section>
+            <ul>
+                <li>
+                    <a href="#kreu">Kreu</a>
+                    <a href="#produktet">Produktet</a>
+                    <a href="#kontakti">Kontakti</a>
+                </li>
+            </ul>
+        </section>
+    </header>
+    <aside>
+        <img width="100%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQileuac_YbWh5VsXMOH0eSgAqvgWVDGvAWPQ&s" alt="">
+    </aside>
+    <main>
+        <article id="kreu">
+            <section>
+                <h1>Barnatorja e qytetit</h1>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX8ZUJn71wcaMktWMdQwf1lDulxf3k5GI-8Q&s" alt="">
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>&copy Barnatorja e qytetit</p>
+    </footer>
+</body>
+
+</html>
