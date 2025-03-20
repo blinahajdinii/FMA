@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        body {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+                "aside header"
+                "aside main"
+                "aside footer"
+            ;
+        }
+
+        aside {
+            grid-area: aside;
+            margin-right: 40px;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url(sidebar-1.jpg);
+
+            padding: 10px;
+            position: fixed;
+            width: 15%;
+            height: 100%;
+        }
+
+        aside>nav>ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .cp {
+
+            color: white;
+            font-size: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            
+        }
+
+        .avatar>img {
+            border-radius: 50%;
+            
+        }
+
+        .avatar {
+            display: flex;
+            color: white;
+            font-size: 15px;
+            align-items: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            
+        }
+
+        aside>nav>ul>li>a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            display: flex;
+            align-content: space-around;
+            padding: 17px;
+
+        }
+
+        aside>nav>ul>li>a:hover {
+            background-color: rgba(128, 128, 128, 0.568);
+            border-radius: 5px;
+
+        }
+
+        .dashboard:hover {
+            background-color: orangered;
+        }
+
+        .dashboard {
+            background-color: orangered;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        hr {
+            border-color: rgb(109, 103, 103);
+        }
+
+        header {
+            grid-area: header;
+            grid: 1fr;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 10px;
+            height: 30px;
+        }
+        header>div{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            align-items: center;
+        }
+        button{
+            padding: 15px;
+            width: 40px;
+            height: 40px;
+            border-radius: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-color: rgba(128, 128, 128, 0.568);
+            border-width: 1px;
+            background-color: white;
+            
+        }
+        header>div>p{
+            text-decoration-color:gray;
+            text-decoration:underline;
+            
+        }
+        main {
+            grid-area: main;
+            grid: 15fr;
+        }
+
+        footer {
+            grid-area: footer;
+            grid: 1fr;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+        <button>:</button>
+        <p>Dashboard</p>
+    </div>
+    <div>
+        <p>Search</p>
+        <button>o</button>
+        1
+        2
+        3
+    </div>
+    </header>
+    <aside>
+        <div class="cp">
+            <p>CP Cool Page</p>
+
+
+        </div>
+        <hr>
+        <div class="avatar">
+            <img width="15%" src="avatar.jpg" alt="">
+            <p>John Doe</p>
+
+        </div>
+        <hr>
+        <nav>
+            <ul>
+                <li><a class="dashboard" href="">Dashboard</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Components</a></li>
+                <li><a href="">Forms</a></li>
+                <li><a href="">Tables</a></li>
+                <li><a href="">Maps</a></li>
+                <li><a href="">Widgets</a></li>
+                <li><a href="">Charts</a></li>
+                <li><a href="">Calendar</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <article>
+            <section>
+                
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>jasdhkjs</p>
+    </footer>
+</body>
+
+</html>
