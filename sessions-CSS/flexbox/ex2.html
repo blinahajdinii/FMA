@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            background-color: blue;
+            height: 300px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: stretch;
+            /* align-items perdoret mrena ni line me rregullu
+            center-i qon nmes te posht
+            flex-start - prej fillimit 
+            flex-end - prej fundit
+            baseline- i barazon kejtat 
+            strech- me zon kejt permbajtjen*/
+            align-content: space-around;
+            /* flex-start - i vendos nalt
+            flex-end - i vendos posht
+             space-around - distanc
+             space-between - distanc rreshtin e par nalt rreshtin e fundit posht
+             space-even - distanc tbarabart*/
+             
+        }
+        .container>div{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
+    </div>
+</body>
+</html>
