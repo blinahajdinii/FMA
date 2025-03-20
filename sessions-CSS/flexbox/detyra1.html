@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            list-style-type: none;
+            font-size: 20px;
+            
+        }
+        nav{
+            background-color: rgb(56, 56, 56);
+            padding: 10px;
+        }
+        a:link{
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            color:aqua;
+            text-decoration: none;
+        }
+        .flex-container>div{
+            border-style: solid;
+            border-width: 2px;
+            margin: 20px;
+            background-color: rgb(170, 167, 167);
+            width: 30%;
+            height: 150px;
+        }
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .x{
+            position: absolute;
+            top:100px;
+            left: 430px;
+        }
+        .y{
+            position: absolute;
+            top:100px;
+            left: 880px;
+        }
+        .z{
+            position: absolute;
+            top:100px;
+            left: 1330px;
+        }
+        .xy{
+            position: absolute;
+            top:295px;
+            left: 430px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="#Menyja1">Menyja 1</a></li>
+                <li>
+                    <a href="#Menyja2">Menyja 2</a>
+                </li>
+                <li>
+                    <a href="#Menyja3">Menyja 3</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="flex-container">
+        <div>
+            <h1>Element 1</h1>
+            <p>Paragrafi ne div-in e pare</p>
+            <img class="x" width="20px" src="../../assignments-CSS/Position Experiments/remove.png" alt="">
+        </div>
+        <div>
+            <h1>Element 2</h1>
+            <p>Paragrafi ne div-in e dyte</p>
+            <img class="y" width="20px" src="../../assignments-CSS/Position Experiments/remove.png" alt="">
+
+        </div>
+        <div>
+            <h1>Element 3</h1>
+            <p>Paragrafi ne div-in e trete</p>
+            <img class="z" width="20px" src="../../assignments-CSS/Position Experiments/remove.png" alt="">
+
+        </div>
+        <div>
+            <h1>Element 4</h1>
+            <p>Paragrafi ne div-in e katert</p>
+            <img class="xy" width="20px" src="../../assignments-CSS/Position Experiments/remove.png" alt="">
+
+        </div>
+    </div>
+</body>
+</html>
