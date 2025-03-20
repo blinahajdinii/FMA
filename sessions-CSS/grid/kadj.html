@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: aqua;
+            display: grid;
+            grid-template-areas: 
+            "header header"
+            "list paragraf"
+            "footer footer";
+            grid-template-columns: 1fr 3fr;
+        }
+        .header{
+            grid-area: header;
+            border: 2px solid blue;
+        }
+        .list{
+            grid-area: list;
+            border: 2px solid blue;
+        }
+        .paragraf{
+            grid-area:paragraf;
+            border: 2px solid blue;
+            padding: 10px;
+
+        }
+        .footer{
+            grid-area:footer;
+            border: 2px solid blue;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Grid Layout</h1>
+    <div class="container">
+        <div class="header">
+            <h1>My Header</h1>
+        </div>
+        <div class="list">
+            
+            <a href="">Link 1</a> <br>
+            <a href="">Link 2</a><br>
+            <a href="">Link 3</a>
+            
+        </div>
+        <div class="paragraf">
+            <h2>Lorem Ipsum </h2>
+            <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
+                Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                
+                </p>
+        </div>
+        <div class="footer">
+            <p>Footer</p>
+        </div>
+    </div>
+</body>
+</html>
