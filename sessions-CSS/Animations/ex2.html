@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: shembulli;
+            animation-delay: 1s;
+            animation-duration: 4s;
+            animation-iteration-count:infinite ;
+            /* sa her mu perserit animacioni
+            mun mu kon me numra ose vleren infinit  */
+            position: relative;
+            animation-direction: alternate-reverse;
+            /* alternate-niher shkon mar tani prap */
+            /* reverse-e bon tkunderten qka i kem thon na */
+            /* alternate-reverse -niher shkon te mas tani kththet te para */
+            
+        }
+        @keyframes shembulli{
+            0%{
+                background-color: red;
+                left:0px;
+                top:0px;
+            }
+            25%{
+                background-color: green;
+                left:200px;
+                top:0px;
+            }
+            50%{
+                background-color: orange;
+                 left:200px;
+                 top:200px;
+            }
+            75%{
+                background-color: yellow;
+                left:0px;
+                top:200px;
+            }
+            100%{
+                background-color: blue;
+                left:0px;
+                top:0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
